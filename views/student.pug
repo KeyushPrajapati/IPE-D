@@ -1,0 +1,28 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        title Document
+    body 
+        form(action="/data" method="post")
+            p name: 
+                input(type='text',name='name')
+            p rollno: 
+                input(type="number", name='roll')
+            p divition : 
+                input(type="text", name ='divition')
+            p  email : 
+                input(type="email",name='email')
+            p subject: 
+                label(for="FSD-2") FSD-2 
+                    input(type="radio", name="sub",value='FSD-2', id='FSD-2') 
+                label(for=" COA ") COA 
+                    input(type="radio", name="sub",value='COA', id="COA") 
+                label(for="Python-2") Python-2 
+                    input(type="radio", name="sub",value='Python-2', id='Python-2') 
+                label(for="DM")  DM 
+                    input(type="radio", name="sub",value='DM', id='DM') 
+                label(for="TOC")  TOC 
+                        input(type="radio", name="sub",value='TOC',id='TOC')
+            input(type="submit")
